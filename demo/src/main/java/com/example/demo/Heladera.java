@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+@Table(name = "Heladera", schema = "servicio")
 public class Heladera {
 
     @Id
@@ -14,7 +15,8 @@ public class Heladera {
     private Long id_Heladera;
 
     @OneToOne
-    @JoinColumn(name = "id_Coordenada", referencedColumnName = "id_Coordenada")    private Coordenada coordenada;
+    @JoinColumn(name = "id_Coordenada", referencedColumnName = "id_Coordenada")
+    private Coordenada coordenada;
 
     // Otros atributos, constructores, getters y setters
 }

@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+@Table(name = "Coordenada", schema = "servicio")
 public class Coordenada {
 
     @Id
